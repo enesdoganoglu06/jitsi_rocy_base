@@ -50,7 +50,7 @@ dpkg -l >> $OLD_FILES/dpkg.status
 dnf install -y epel-release
 dnf $APT_PROXY -y update
 dnf $APT_PROXY -y upgrade
-dnf $APT_PROXY -y install apt-utils
+dnf $APT_PROXY -y install dnf-utils
 
 # added packages
 dnf $APT_PROXY -y install lxc bridge-utils lxc-templates container-selinux
